@@ -28,7 +28,6 @@ function averageStudentMark(id) {
   const student = students.find((item) => item.id == id);
 
   if (!student) {
-
     return;
   }
 
@@ -42,11 +41,9 @@ function averageGroupMark(students) {
   const averageMark = getAverageMark(marks);
 
   return averageMark;
-
 }
 
 function getMarkSum(marks) {
-
   return marks.reduce((previousValue, currentValue) => previousValue + currentValue);
 }
 
